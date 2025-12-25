@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.div{
+    background: linear-gradient(pink,rgb(171, 85, 171),violet);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px 10px;
+    box-shadow: 0px 4px 8px rgb(70, 4, 26);
+}
+audio{
+    width: 300px;
+    height: 50px;
+    background-color: bisque;
+    border-radius: 40px;
+    
+}
+audio:hover{
+    border-radius: 40px;
+    transition: 2s;
+}
+.main{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+h1{
+    margin-top:5px ;
+    margin-bottom: 4px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: papyrus;
+    color: rgb(145, 15, 104);
+    font-weight: 500px;
+    text-align: center;
+    background:linear-gradient(rgb(179, 129, 129),rgb(168, 168, 219),pink);
+}
+h1::first-letter{
+    color:palevioletred;
+}
+.section2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.div1{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(pink,rgb(171, 85, 171),violet);
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px 10px;
+    box-shadow: 0px 4px 6px rgb(16, 9, 11);
+}
+.div img,
+.div1 img {
+    display: block;
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    margin: 10px auto !important;
+}
+
+.div:hover{
+    box-shadow: 0px 8px 16px rgb(115, 46, 69);
+    transition: 2s;
+    scale: 0.9;
+}
+.div1:hover{
+    box-shadow: 0px 8px 16px rgb(115, 46, 69);
+    transition: 2s;
+    scale: 0.9;
+
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main, .section2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div, .div1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .div img,
+    .div1 img {
+        width: 80%;
+        height: auto;
+    }
+
+    audio {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .div, .div1 {
+        margin: 10px auto;
+        width: 95%;
+    }
+
+    .div img,
+    .div1 img {
+        width: 70%;
+    }
+
+    audio {
+        width: 90%;
+    }
+}
